@@ -1,0 +1,404 @@
+/* ============= Box Model ====================== */
+* {
+    box-sizing: border-box;
+   
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+  }
+  
+  /* ============== Clear fix Adjustment ================= */
+  .clearfix:after {
+       content: ".";
+       display: flex;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+
+
+/* ================== Header ==============================*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ================== Logo ==============================*/
+.logo {
+  height: 500px;
+  width: auto;
+  z-index: 2;
+}
+
+
+
+/* ============== Star icon (logo) ======================= */
+.star-icon {
+  z-index: -1;
+  left: 250px;
+
+}
+
+/* 
+Star icon adjustments for build page */
+
+.large-star-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left:0;
+}
+
+
+.large-star-icon {
+   /* position: fixed; */
+  top: 50%;
+  right: -168px;
+  transform: translateY(-330px);
+  z-index: 100;
+}
+
+
+
+
+/* ============= All nav bars for each page ============= */
+  .nav-bar{
+    display: flex;
+    /* height: 50%; */
+    width: auto;
+    justify-content: center;
+    background-color: #dc8d92;
+    padding: 10px 0;
+   
+  }
+
+  .nav-bar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   align-self: center;
+    gap:20px;
+    
+
+  }
+
+  .nav-bar li a {
+    display: block;
+   padding: 10% 10%;
+   text-decoration: none;
+   
+
+  }
+
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+  /*  ================ Background images for each page ============== */
+
+  body.home-background {
+    background-image: url("images/FOLIARY_home.png");
+  }
+
+  body.build-background {
+    background-image: url("images/FOLIARY_build_background.png");
+  }
+
+
+
+
+
+/* ================== Home page title and description adjustments ================ */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+/* =========== Home page title ======================= */
+.home-title {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  /* margin-top: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; */
+
+}
+
+
+.home-title img {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  /* width: 100%; */
+  height: 100%;
+}
+
+
+/* =============== Home Page Description ================ */
+.home-page-description{
+  margin-top: -195px;
+  display: block;
+  color: white;
+}
+
+
+/* ================ Account page title ================ */
+.account-title {
+  /* display: flex;
+  /* margin-top: 10%; */
+  /* width: 50%;
+  align-items: center;
+  flex-direction: column;
+  /* text-align: center; */
+   /* border: 2px solid green;
+   float: left; */ */ */
+}
+
+
+
+/* =============== Account page options ================ */
+.account-options {
+  display: flex;
+  /* margin-top: 10%; */
+  /* width: 100%;
+  flex-direction: column;
+  margin-left: 10%;
+  flex-wrap: wrap;
+  border: 2px solid red; */
+}
+
+.account-options ul {
+    list-style: none;
+  /* margin-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid yellow; */
+}
+
+
+/* ============= Build page title ========================*/
+.build-portfolio-title{
+   position: relative;
+  width: 800px;
+  height: 500px;
+  /* text-align: center;
+  margin-top: 10%; */
+
+}
+
+.home-title img {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  /* width: 100%; */
+  height: 100%;
+}
+
+.build-portfolio-title h1{
+  text-align: center;
+  margin-top: -195px;
+}
+
+/* ================ Build page options ====================== */
+.build-options {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 100;
+
+}
+
+.build-options ul {
+  list-style: none;
+}
+
+
+/* ================ Design page title ====================== */
+.design-template-title {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.design-template-title h1 {
+   display: inline-block;
+}
+/* ================== Design page options ===================== */
+.design-options{
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.design-options ul {
+  list-style: none;
+}
+
+/* ================ Learn page title ====================== */
+.learn-creative-paths-title {
+   text-align: center;
+   margin-top: 10%;
+}
+
+.learn-creative-paths-title h1 {
+  display: inline-block;
+}
+
+/* ================== Learn page options ===================== */
+
+.learn-options {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.learn-options ul {
+  list-style: none;
+}
+
+
+/* ================ Write page title ====================== */
+.write-resume-builder-title {
+   text-align: center;
+   margin-top: 10%;
+}
+
+.write-resume-builder-title h1 {
+  display: inline-block;
+}
+
+/* ================== Write page options ===================== */
+
+.write-options {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.write-options ul {
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================== ARCHIEVED ============================= */
+
+/* =============== Wireframe boxes for pages ================= */
+
+/* Build */
+/* .build-wireframe-box {
+  display: flex;
+  width: 300px;
+  height: 30px;
+  border: 2px dashed darkgray;
+  background-color: gray;
+  align-items: center;
+  justify-content: center;
+
+} */
+
+
+/* Write */
+
+/* .write-wireframe-box {
+  display: flex;
+  width: 300px;
+  height: 30px;
+  border: 2px dashed darkgray;
+  background-color: gray;
+  align-items: center;
+  justify-content: center;
+
+} */
+
+
+/* Design
+
+.design-wireframe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+  padding: 20px;
+
+} */
+
+/* .design-box {
+
+  border: 2px solid darkgray;
+  background-color: gray;
+  height: 150px;
+  width: 200px;
+} */
+
+
+
+/* Learn
+.learn-wireframe-grid{
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+  padding: 20px;
+} */
+
+
+/* .learn-box {
+   border: 2px solid darkgray;
+  background-color: gray;
+  height: 150px;
+  width: 200px;
+} */
+
+
